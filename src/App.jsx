@@ -555,9 +555,9 @@ const App = () => {
         <div className="flex items-center">
           <button onClick={partialWithdrawCollateral}>Partial Withdraw Collateral</button>
           <div className="ml2"> Enter Position Id </div>
-          <input className="mh2" value={partialWithdrawCollateralPositionInput} onChange={(e) => setAddCollateralPositionInput(e.target.value)}></input>
+          <input className="mh2" value={partialWithdrawCollateralPositionInput} onChange={(e) => setPartialWithdrawCollateralPositionInput(e.target.value)}></input>
           <div className="ml2"> Withdraw collateral XRD amount </div>
-          <input className="mh2" value={partialWithdrawCollateralXrdInput} onChange={(e) => setAddCollateralXrdInput(e.target.value)}></input>
+          <input className="mh2" value={partialWithdrawCollateralXrdInput} onChange={(e) => setPartialWithdrawCollateralXrdInput(e.target.value)}></input>
         </div>
         <div className="ml2">{partialWithdrawCollateralLogs ? displayTxLogs(partialWithdrawCollateralLogs) : ""}</div>
       </div>
